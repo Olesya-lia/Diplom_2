@@ -32,13 +32,6 @@ public class UserSteps {
                 .then()
                 .extract().response();
     }
-//
-//    @Step("Получение token пользователя")
-//    public static String getUserToken(Response createResponse){
-//        return createResponse
-//                .jsonPath()
-//                .getString("accessToken");
-//    }
 
     @Step("Удаление пользователя c помощью token")
     public static Response deleteUser(String tokenUser) {
